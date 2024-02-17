@@ -1,4 +1,4 @@
-#region="us-east-1"
+region="us-east-1"
 addr="10.8.0.0/16"
 sdr=["10.8.128.0/18", "10.8.64.0/18"]
 nam="ninja-vpc-01"
