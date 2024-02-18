@@ -70,7 +70,7 @@ resource "tls_private_key" "rsa" {
 
 resource "local_file" "tf-key" {
   content  = tls_private_key.rsa.private_key_pem
-  filename = "/home/opstree/Downloads/keyins.pem"  # Provide the desired path and file name with .pem extension
+  filename = "/home/ubuntu/Downloads/palash4141.pem"  # Provide the desired path and file name with .pem extension
 }
 
 resource "aws_security_group" "allow_all" {
