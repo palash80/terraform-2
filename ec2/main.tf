@@ -20,5 +20,6 @@
     associate_public_ip_address = false
     tags = {
     Name = "private[count.index]"
+    Type = "private"
   }
   }
