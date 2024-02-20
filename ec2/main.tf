@@ -19,7 +19,8 @@
     subnet_id=var.priv_subnet[count.index]
     associate_public_ip_address = false
     tags = {
-    Name = "private${count.index+1}"
-    Type = "private"
+    Name = "posgresql${count.index+1}"
+    group = "psqlnodes"
+
   }
   }
