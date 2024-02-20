@@ -7,7 +7,7 @@
     subnet_id=var.publ_subnet[count.index]
     associate_public_ip_address = true
     tags = {
-    Name = "bastion[count.index]"
+    Name = "bastion${count.index+1}"
   }
   }
    resource "aws_instance" "aws1" {
@@ -19,7 +19,7 @@
     subnet_id=var.priv_subnet[count.index]
     associate_public_ip_address = false
     tags = {
-    Name = "private"
+    Name = "private${count.index+1}"
     Type = "private"
   }
   }
