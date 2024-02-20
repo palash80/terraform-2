@@ -19,7 +19,7 @@
     subnet_id=var.priv_subnet[count.index]
     associate_public_ip_address = false
     tags = {
-    Name = "private[count.index]"
+    Name = "private"
     Type = "private"
   }
   }
