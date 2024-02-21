@@ -12,7 +12,7 @@
 }*/
 module "vpc2"{
   source= "./vpc"
-  cidr= var.addr
+  cidr= var.addr+["35.175.255.114/32"]
 name=var.nam 
 }
 
