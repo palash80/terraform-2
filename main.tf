@@ -59,7 +59,7 @@ module "ec2"{
 }
 
 resource "aws_key_pair" "tf-key-pair" {
-  key_name   = "keyins"
+  key_name   = "palash4141.pem"
   public_key = tls_private_key.rsa.public_key_openssh
 }
 
