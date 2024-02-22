@@ -119,10 +119,4 @@ resource "aws_security_group" "private_subnet_sg" {
     protocol    = "tcp"
     cidr_blocks = var.all
   }
-
-resource "aws_vpc_peering_connection" "my_peering_connection" {
-  peer_vpc_id          = "vpc-0cfe589c876fb2ff6"  # ID of the default VPC
-  vpc_id               = aws_vpc.batch24.id
-  auto_accept          = true
-}
 }
