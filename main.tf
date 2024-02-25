@@ -71,6 +71,7 @@ resource "tls_private_key" "rsa" {
 
 resource "local_file" "tf-key" {
   content  = tls_private_key.rsa.private_key_pem
+  file_permission = "0400"
   filename = "./palash414.pem"  # Provide the desired path and file name with .pem extension
 }
 
