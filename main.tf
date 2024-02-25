@@ -111,7 +111,15 @@ resource "aws_security_group" "private_subnet_sg" {
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = var.sdrjenkins
+}
 
+    ingress {
+
+    from_port   = -1
+    to_port     = -1
+    protocol    = "icmp"
+    cidr_blocks = ["172.31.0.0/16"]
+   
 
   }
 
