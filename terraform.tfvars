@@ -14,3 +14,5 @@ am="ami-06aa3f7caf3a30282"
 gateway_name = "ninja-igw-01"
 
 all=["0.0.0.0/0"]
+
+sdrjenkins=["10.8.128.0/18", "10.8.64.0/18" , "172.31.0.0/16"]
