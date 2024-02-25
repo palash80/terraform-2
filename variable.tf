@@ -34,3 +34,8 @@ variable "gateway_name"{
 variable "all"{
     type=list(string)
 }
+
+
+variable "sdrjenkins"{
+type=list(string)
+}
