@@ -168,6 +168,7 @@ resource "aws_route" "route_to_peer_vpc2" {
   route_table_id            = module.route_tables.private_peer_route
   destination_cidr_block    = "172.31.0.0/16"
   vpc_peering_connection_id = aws_vpc_peering_connection.peering_connection.id
+}
 
 
 # Associate the peering connection with a route table in VPC2
@@ -176,7 +177,7 @@ resource "aws_route" "route_to_peer_vpc22" {
   destination_cidr_block    = "172.31.0.0/16"
   vpc_peering_connection_id = aws_vpc_peering_connection.peering_connection.id
 }
-}
+
 
 
 
