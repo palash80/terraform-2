@@ -162,3 +162,7 @@ resource "aws_route" "route_to_peer_vpc2" {
   destination_cidr_block    = "172.31.0.0/16"
   vpc_peering_connection_id = aws_vpc_peering_connection.peering_connection.id
 }
+
+
+
+
