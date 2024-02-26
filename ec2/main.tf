@@ -20,7 +20,7 @@
     associate_public_ip_address = false
     tags = {
     Name = "posgresql${count.index+1}"
-    #group = "psqlnodes"
+    group = "psqlnodes"
 
   }
   }
