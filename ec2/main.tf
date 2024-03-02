@@ -8,6 +8,7 @@
     associate_public_ip_address = true
     tags = {
     Name = "bastion${count.index+1}"
+    project = "psql"
   }
   }
    resource "aws_instance" "aws1" {
@@ -21,6 +22,6 @@
     tags = {
     Name = "posgresql${count.index+1}"
     group = "psqlnodes"
-
+    project = "psql"
   }
   }
